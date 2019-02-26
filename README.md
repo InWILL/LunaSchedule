@@ -32,8 +32,8 @@ Oriville
 - icalendar
 
 ## Installation
-Add `location` your nginx setting
-    `location / {
+Add location your nginx setting
+    location / {
         include  uwsgi_params;
         uwsgi_pass  127.0.0.1:8000;
         uwsgi_param UWSGI_SCRIPT LunaSchedule.wsgi;
@@ -46,7 +46,7 @@ Add `location` your nginx setting
     }
     location /s {
         alias /LunaSchedule/s;
-    }`
+    }
 
 Initialize Django
     python manage.py makemigrations
