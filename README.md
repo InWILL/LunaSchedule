@@ -1,6 +1,7 @@
 # LunaSchedule
 *LunaSchedule*是一款专为大学生设计的日历订阅网站
 如果您喜欢此网站，请为我们进行捐赠，网站成本极低，基本上每捐赠1￥，运营时间则可多延长1天
+
 ![Alipay](http://images.cnblogs.com/cnblogs_com/InWILL/898968/o_alipai.jpg)
 ![Wechat](http://images.cnblogs.com/cnblogs_com/InWILL/898968/o_wechat.jpg)
 
@@ -32,7 +33,7 @@ Oriville
 
 ## Installation
 Add `location` your nginx setting
-    location / {
+    `location / {
         include  uwsgi_params;
         uwsgi_pass  127.0.0.1:8000;
         uwsgi_param UWSGI_SCRIPT LunaSchedule.wsgi;
@@ -45,7 +46,7 @@ Add `location` your nginx setting
     }
     location /s {
         alias /LunaSchedule/s;
-    }
+    }`
 
 Initialize Django
     python manage.py makemigrations
