@@ -34,20 +34,20 @@ Oriville
 ## Installation
 Add location your nginx setting
 ```
-    location / {
-        include  uwsgi_params;
-        uwsgi_pass  127.0.0.1:8000;
-        uwsgi_param UWSGI_SCRIPT LunaSchedule.wsgi;
-        uwsgi_param UWSGI_CHDIR /Luna;
-        index  index.html index.htm;
-        client_max_body_size 35m;
-    }
-    location /static {
-        alias /LunaSchedule/static;
-    }
-    location /s {
-        alias /LunaSchedule/s;
-    }
+location / {
+    include  uwsgi_params;
+    uwsgi_pass  127.0.0.1:8000;
+    uwsgi_param UWSGI_SCRIPT LunaSchedule.wsgi;
+    uwsgi_param UWSGI_CHDIR /Luna;
+    index  index.html index.htm;
+    client_max_body_size 35m;
+}
+location /static {
+    alias /LunaSchedule/static;
+}
+location /s {
+    alias /LunaSchedule/s;
+}
 ```
 
 Initialize Django
