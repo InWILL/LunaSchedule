@@ -1,5 +1,5 @@
 # LunaSchedule
-*LunaSchedule*是一款专为大学生设计的日历订阅网站
+**LunaSchedule**是一款专为大学生设计的日历订阅网站
 
 如果您喜欢此网站，请为我们进行捐赠，网站成本极低，基本上每捐赠1￥，运营时间则可多延长1天
 
@@ -55,4 +55,4 @@ Initialize Django
     python manage.py migrate
 
 ## Run
-   uwsgi --ini uwsgi.ini & nginx
+- `uwsgi --ini uwsgi.ini & nginx`
