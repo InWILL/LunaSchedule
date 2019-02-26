@@ -24,13 +24,13 @@ Oriville
 - libpq-dev   9.3.24
 
 ### Python plugins
-- psycopg2
-- uwsgi
-- requests
-- PyExecJS
-- pandas
-- pytz
-- icalendar
+- psycopg2    2.7.6
+- uwsgi       2.0.18
+- requests    1.0.2
+- PyExecJS    1.5.1
+- pandas      0.24.1
+- pytz        2018.9
+- icalendar   4.0.3
 
 ## Installation
 Add location your nginx setting
