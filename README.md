@@ -33,6 +33,7 @@ Oriville
 
 ## Installation
 Add location your nginx setting
+```
     location / {
         include  uwsgi_params;
         uwsgi_pass  127.0.0.1:8000;
@@ -47,6 +48,7 @@ Add location your nginx setting
     location /s {
         alias /LunaSchedule/s;
     }
+```
 
 Initialize Django
     python manage.py makemigrations
