@@ -1,0 +1,39 @@
+{% extends "navi.html" %}
+{% block content %}
+<div class="row">
+	<div class="col-lg-12">
+		<h1>导入课程表</h1>
+	</div>
+	<form action="/Import/" method="post">
+	{% csrf_token %}
+		<div class="col-lg-12">
+			<select class="btn btn-light dropdown-toggle" name="school" id="school">
+				<option><------请选择您所在的学校-----></option>
+				<option>成都理工大学</option>
+				<option>武汉大学</option>
+			</select>
+		</div>
+		<br>
+		<div class="col-lg-12">
+			<div class="input-group mb-3">
+				<div class="input-group-prepend"><span class="input-group-text">帐号</span></div>
+				<input type="text" name="username" id="username" class="form-control" placeholder="Your Username">
+			</div>
+		</div>
+		<div class="col-lg-12">
+			<div class="input-group mb-3">
+				<div class="input-group-prepend"><span class="input-group-text">密码</span></div>
+				<input type="password" name="password" id="password" class="form-control" placeholder="Your Password">
+			</div>
+		</div>
+		{% if message %}
+		<div class="col-lg-12">
+			<div class="alert alert-warning">{{ message }}</div>
+		</div>
+		{% endif %}
+		<div class="col-lg-12">
+			<input type="submit" name="submit" id="submit" value="导入" class="btn btn-success">
+		</div>
+	</form>
+</div>
+{% endblock %}

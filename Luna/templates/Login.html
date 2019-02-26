@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block mainbody %}
+<div class="jumbotron jumbotron-fluid text-center">
+	<h1 class="display-4">Start your Schedule</h1>
+</div>
+
+<form action="/Login/" method="post">
+	{% csrf_token %}
+	<div class="input-group mb-3 col-lg-5 offset-lg-4">
+		<div class="input-group-prepend"><span class="input-group-text">Email&nbsp; &nbsp; &nbsp; &nbsp; </span></div>
+		<input type="email" name="email" id="email" class="form-control" placeholder="Your E-mail">
+	</div>
+	<div class="input-group mb-3 col-lg-5 offset-lg-4">
+		<div class="input-group-prepend"><span class="input-group-text">Password&nbsp; </span></div>
+		<input type="password" name="password" id="password" class="form-control" placeholder="Your Password" >
+	</div>
+	{% if message %}
+		<div class="container col-lg-5 offset-lg-4">
+			<div class="alert alert-warning">{{ message }}</div>
+		</div>
+	{% endif %}
+	<div class="container">
+		<div class="row">
+			<div class="offset-lg-7 col-lg-2">
+				<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-success">
+			</div>
+		</div>
+	</div>
+</form>
+{% endblock %}

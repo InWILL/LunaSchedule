@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block mainbody %}
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-9">
+			<div class="container">
+				{% block content %}
+				{% endblock %}
+			</div>
+		</div>
+	<div class="col-lg-3 offset-lg-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>导航栏</h2>
+				</div>
+					<div class="col-lg-12"> &nbsp;</div>
+					<div class="col-lg-12"><a href="/Info/">个人信息</a>&nbsp;</div>
+					<div class="col-lg-12"> <a href="/Home/">查看课表</a></div>
+					<div class="col-lg-12"><a href="/Import/">导入课表</a></div>
+					<div class="col-lg-12"><a href="/Logout/">退出</a>&nbsp;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{%extends "navi.html" %}
+{% block content %}
+<div class="row">
+	<div class="col-lg-12">
+		<h1>您的课程表</h1>
+	</div>
+	<div class="col-lg-12">
+		<li>Username：{{ request.session.User_Name }}</li>
+		<br>
+	</div>
+	<div class="col-lg-12">
+		<div class="input-group mb-3">
+			<div class="input-group-prepend"><span class="input-group-text">URL</span></div>
+			<input type="text" class="form-control" id="content" value="{{ Url }}" readonly>
+			<button type="button" class="btn btn-secondary" id="copybutton">复制</button>
+			<script>
+				function copyArticle(event)
+				{
+					const range = document.createRange();
+					range.selectNode(document.getElementById('content'));
+					const selection = window.getSelection();
+					if(selection.rangeCount > 0) selection.removeAllRanges();
+					selection.addRange(range);
+					document.execCommand('copy');
+					alert("复制成功！");
+				}
+				document.getElementById('copybutton').addEventListener('click', copyArticle, false);
+			</script>
+		</div>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend"> </div>
+			<div class="input-group-append"> </div>
+		</div>
+	</div>
+	<div class="col-lg-12">
+		<h5>预览：</h5>
+	</div>
+	<div class="col-lg-12"></div>
+</div>
+{% endblock %}
