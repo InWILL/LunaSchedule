@@ -1,10 +1,12 @@
 # LunaSchedule
+*LunaSchedule*是一款专为大学生设计的日历订阅网站
+如果您喜欢此网站，请为我们进行捐赠，网站成本极低，基本上每捐赠1￥，运营时间则可多延长1天
+![Alipay](http://images.cnblogs.com/cnblogs_com/InWILL/898968/o_alipai.jpg)
+![Wechat](http://images.cnblogs.com/cnblogs_com/InWILL/898968/o_wechat.jpg)
 
 ## License
 本项目使用**MIT许可证**
 允许**任何人**使用本项目进行二次开发、销售
-
-*LunaSchedule*是一款专为大学生设计的日历订阅网站
 
 ## Special Thanks：
 InWILL
