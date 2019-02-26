@@ -52,8 +52,10 @@ location /s {
 ```
 
 Initialize Django
-    python manage.py makemigrations
-    python manage.py migrate
+```
+python manage.py makemigrations
+python manage.py migrate
+```
 
 ## Run
 - `uwsgi --ini uwsgi.ini & nginx`
