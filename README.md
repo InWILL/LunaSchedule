@@ -10,11 +10,9 @@
 允许**任何人**使用本项目进行二次开发、销售
 
 ## Special Thanks：
-InWILL
-
-Mellow
-
-Oriville
+InWILL  
+Mellow  
+Oriville  
 
 
 ## Requirements
