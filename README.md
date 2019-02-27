@@ -14,6 +14,13 @@ InWILL
 Mellow  
 Oriville  
 
+##Standard
+请尽量使用requests模拟登陆，而不是复杂的urllib
+统一函数名、参数名、返回值（返回icalendar日历结构）
+```
+def GetCalendar(username, password):
+    return cal.to_ical()
+```
 
 ## Requirements
 - Python      3.7.2
