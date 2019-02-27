@@ -42,12 +42,14 @@
 }
 
 html {
+  margin: 0;
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
+  height: 100%;
 }
 
 @-ms-viewport {
@@ -67,6 +69,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  height: 100%;
 }
 
 [tabindex="-1"]:focus {
@@ -555,7 +558,7 @@ pre code {
 
 .container {
   width: 100%;
-  height: auto;
+  height: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -4931,6 +4934,7 @@ tbody.collapse.show {
 }
 
 .jumbotron {
+  height: 100%;
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   background-color: #e9ecef;

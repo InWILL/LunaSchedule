@@ -9,7 +9,13 @@
 
         <!-- Bootstrap -->
         <link href="{% static 'css/bootstrap-4.0.0.css' %}" rel="stylesheet">
-		<font face="Droid Sans Mono">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3750798125747536",
+    enable_page_level_ads: true
+  });
+</script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="/Home/">LunaSchedule</a>
@@ -28,7 +34,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="https://github.com/InWILL/LunaSchedule">Github</a>
-                            <a class="dropdown-item" href="#">Join us</a>
+                            <a class="dropdown-item" href="/Donate/">Join us</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">About</a>
                         </div>
@@ -42,12 +48,11 @@
         </nav>
         {% block mainbody %}
 		{% endblock %}
-		<br><br><br><br><br><br><br><br><br><br>
-        <footer class="container">
+		<footer>
 			<div class="text-center col-lg-6 offset-lg-3">
 				<p>Copyright &copy; 2019 &middot; All Rights Reserved &middot; <a href="https://www.cnblogs.com/InWILL">InWILL</a></p>
 			</div>
-        </footer>
+		</footer>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
         <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed --> 

@@ -25,7 +25,7 @@ SECRET_KEY = '$v%8k*8s6t4tta2gsg^sbg3exi6pp!s43k%b4853!mcim(o^hk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['192.227.209.157','LunaSchedule.cn']
+ALLOWED_HOSTS = ['LunaSchedule.cn','www.LunaSchedule.cn']
 
 
 # Application definition
@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'LunaSchedule.wsgi.application'
 DATABASES = {
 	'default': {
 		'ENGINE': 'django.db.backends.postgresql',
-		'NAME': 'DATABASE NAME',
-		'USER': 'USER NAME',
-		'PASSWORD': 'PASSWORD',
+		'NAME': 'PostgreSQL',
+		'USER': 'PostgreSQL',
+		'PASSWORD': 'PostgreSQL',
 		'HOST': '127.0.0.1',
 		'PORT': '5432',
 	}

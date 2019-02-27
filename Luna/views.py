@@ -77,7 +77,7 @@ def Logout(request):
 def Home(request):
 	if not request.session.get('Status',None):
 		return HttpResponseRedirect('/')
-	Url='http://'+request.get_host()+'/s/'+request.session['User_Url']
+	Url='webcal://'+request.get_host()+'/s/'+request.session['User_Url']
 	return render(request,'Home.html',locals())
 
 def Import(request):
@@ -95,7 +95,7 @@ def Import(request):
 			message = "请检查填写的内容！"
 			return render(request,'Import.html',locals())
 		email = request.session['User_Email']
-		url = hashlib.md5(bytes(str(time.time())+email,encoding='utf-8')).hexdigest()[8:-8]+'.ics'
+		url = hashlib.md5(bytes(email,encoding='utf-8')).hexdigest()[8:-8]+'.ics'
 		calfile = open('./s/'+url, 'wb')
 		calfile.write(cal)
 		calfile.close()
