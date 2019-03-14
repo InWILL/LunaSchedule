@@ -2,6 +2,10 @@
 **LunaSchedule**是一款专为大学生设计的日历订阅网站  
 LunaSchedule开发交流群：881520051
 
+用了一学期超级课程表，被50+M的内存、巨慢的加载速度劝退了，怒而自己设计一款课程表
+支持Android、IOS
+添加日历订阅，自动导入到系统日历，无需安装任何app
+
 如果您喜欢此网站，请为我们进行捐赠，网站成本极低，基本上每捐赠1￥，运营时间则可多延长1天
 
 ![Donate](http://images.cnblogs.com/cnblogs_com/InWILL/898968/o_pai.jpg)
